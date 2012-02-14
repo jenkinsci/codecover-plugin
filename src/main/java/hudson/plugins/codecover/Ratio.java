@@ -63,7 +63,7 @@ final public class Ratio implements Serializable {
      */
     @Exported
     public float getPercentageFloat() {
-        return denominator<=0? 0: 100*numerator/denominator;
+        return denominator<=0? 100: 100*numerator/denominator;
     }
 
     public boolean equals(Object o) {
